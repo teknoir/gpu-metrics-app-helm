@@ -3,6 +3,21 @@ entries:
   gpu-metrics-app:
   - apiVersion: v2
     appVersion: v1.0.0
+    created: "2026-04-15T13:34:50.052088564Z"
+    dependencies:
+    - condition: gpu.nvidia
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: '>=4.0.0'
+    description: A Helm chart for a generic GPU metrics app
+    digest: ea95451084221aaa285ecc49d4aa4434a3ce02b05d18f32124a27c2bc1b841e0
+    name: gpu-metrics-app
+    type: application
+    urls:
+    - https://github.com/teknoir/gpu-metrics-app-helm/releases/download/gpu-metrics-app-0.0.3/gpu-metrics-app-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: v1.0.0
     created: "2025-06-02T21:10:31.244125959Z"
     dependencies:
     - condition: gpu.nvidia
@@ -16,4 +31,4 @@ entries:
     urls:
     - https://github.com/teknoir/gpu-metrics-app-helm/releases/download/gpu-metrics-app-0.0.2/gpu-metrics-app-0.0.2.tgz
     version: 0.0.2
-generated: "2025-06-02T21:10:31.244136028Z"
+generated: "2026-04-15T13:34:50.052100357Z"
